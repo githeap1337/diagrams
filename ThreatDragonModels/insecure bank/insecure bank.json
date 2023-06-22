@@ -27,16 +27,28 @@
               "angle": 0,
               "id": "23c0b472-3a67-4d8e-995a-750ea9e8013e",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Разглашение учетных данных",
+                  "type": "Spoofing",
+                  "description": "Фишинг, ставление записанных учетных данных в общедоступных местах, передача 3 лицам",
+                  "mitigation": "Обучение",
+                  "threatId": "9224dda0-babc-425d-a628-ace06c99e9de"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Пользователь"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -53,16 +65,28 @@
               "angle": 0,
               "id": "73df019a-931c-41ad-805e-38550aea8e6b",
               "z": 2,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Разглашение учетных данных",
+                  "type": "Spoofing",
+                  "description": "Фишинг, передача данных 3 лицам",
+                  "mitigation": "Орг. меры, обучение",
+                  "threatId": "c7a2447f-9cb9-4f8f-93d7-cfe451c1c36e"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Администратор"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -79,16 +103,28 @@
               "angle": 0,
               "id": "8b9b6fd3-f190-4155-8c70-dc01438a699e",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "SQL injection",
+                  "type": "Spoofing",
+                  "description": "Вплоть до RCE",
+                  "mitigation": "Харденинг СУБД, фильтрация ввода и тд",
+                  "threatId": "113d0132-bf20-4c2a-8fb2-31f8662c1aa2"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "База данных"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -99,8 +135,8 @@
                 "height": 100
               },
               "position": {
-                "x": 690,
-                "y": 120
+                "x": 707,
+                "y": 133
               },
               "angle": 0,
               "id": "a25a622b-028f-496b-b30c-3e6e2ce7f9d1",
@@ -174,17 +210,38 @@
               "angle": 0,
               "id": "a3cd44f3-735e-45af-86a0-20a23242ab83",
               "z": 7,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "description": "Apache Tomcat/9.0.29",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Обход аутентификации на веб-сервере",
+                  "type": "Spoofing",
+                  "mitigation": "Настройка авторизации по сертификатам",
+                  "threatId": "ef0850ae-ff90-4fb9-9598-e0898c0ef7a3"
+                },
+                {
+                  "status": "Mitigated",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Отказ в обслуживании",
+                  "type": "Denial of service",
+                  "description": "Эксплуатация известных уязвимостей",
+                  "mitigation": "Обновление (патчинг), установка ограничений на количество одновременных запросов от одного клиента",
+                  "threatId": "179a75c5-8bbc-482f-8f50-c89012186c70"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "веб-сервер"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -310,7 +367,7 @@
               },
               "position": {
                 "x": 690,
-                "y": 240
+                "y": 239
               },
               "angle": 0,
               "id": "f6894f8e-32f4-4f7f-aa2f-b253d21c2be2",
@@ -336,21 +393,41 @@
               },
               "position": {
                 "x": 520,
-                "y": 150
+                "y": 137
               },
               "angle": 0,
               "id": "10f214f9-c3f9-4130-a944-433148e3bdd1",
               "z": 12,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Ошибки в бизнес-логике приложения",
+                  "mitigation": "Типизация и валидация данных",
+                  "type": "Tampering",
+                  "threatId": "923a1c2d-8ece-4b6d-86e2-ce5ce0a7c847"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Обход аутентификации",
+                  "type": "Spoofing",
+                  "mitigation": "2FA, фильтрация ввода, ограничение попыток входа, установка периода ожидания для повторной попытки входа, валидация и типизация данных",
+                  "threatId": "fdcf902b-e6ea-4ca0-bd54-e1ffbbfa71b9"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Сервер\nприложения"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -367,16 +444,29 @@
               "angle": 0,
               "id": "2a7e5cee-b325-41f2-b8da-c205dad8864e",
               "z": 13,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
+                  "title": "Видны номера карт и состояние счета",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "",
+                  "mitigation": "Маскирование",
+                  "threatId": "d9bad881-dd55-4af6-8c26-129c5d50c481"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Счет"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -393,16 +483,27 @@
               "angle": 0,
               "id": "38096ffd-6381-40ea-824c-ce74b4423aea",
               "z": 14,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Фальшивая транзакция",
+                  "type": "Tampering",
+                  "description": "Изменение состояния счета за счет подделки транзакции из-за состояния гонки",
+                  "threatId": "514874fd-f133-45ce-8a08-7d738a8e6bdc"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Транзакция"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -419,14 +520,19 @@
               "target": {
                 "id": "10f214f9-c3f9-4130-a944-433148e3bdd1"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 495,
+                  "y": 183
+                }
+              ],
               "id": "ecc63e0f-0545-4cde-af77-21d660032ae4",
               "labels": [
                 {
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 13",
+                      "text": "",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -464,7 +570,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 14",
+                      "text": "",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -495,14 +601,22 @@
               "target": {
                 "id": "f6894f8e-32f4-4f7f-aa2f-b253d21c2be2"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 660,
+                  "y": 236
+                }
+              ],
               "id": "c58b2c00-67d4-4510-9ed3-eff2fd77d9cb",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.5664630655215375,
+                    "offset": -13.033916341978266
+                  },
                   "attrs": {
                     "text": {
-                      "text": "flow 15",
+                      "text": "",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -533,16 +647,27 @@
               "angle": 0,
               "id": "a8473a02-124c-4bb3-b876-dfb05a81ae59",
               "z": 18,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Загрузка вредоносного ПО через форму загрузки",
+                  "type": "Spoofing",
+                  "mitigation": "Убрать загрузку",
+                  "threatId": "2130880b-8e16-41f5-9ae8-500ebe6c885c"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Профиль"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -566,7 +691,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 17",
+                      "text": "",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -613,7 +738,7 @@
                   },
                   "attrs": {
                     "text": {
-                      "text": "flow 18",
+                      "text": "",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -657,7 +782,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 19",
+                      "text": "",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -700,7 +825,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 20",
+                      "text": "",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -743,7 +868,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 21",
+                      "text": "",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -786,7 +911,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 22",
+                      "text": "",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -953,7 +1078,7 @@
                   },
                   "attrs": {
                     "text": {
-                      "text": "flow 26",
+                      "text": "",
                       "font-weight": "400",
                       "font-size": "small"
                     }
