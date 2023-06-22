@@ -135,8 +135,8 @@
                 "height": 100
               },
               "position": {
-                "x": 707,
-                "y": 133
+                "x": 705,
+                "y": 128
               },
               "angle": 0,
               "id": "a25a622b-028f-496b-b30c-3e6e2ce7f9d1",
@@ -417,6 +417,15 @@
                   "type": "Spoofing",
                   "mitigation": "2FA, фильтрация ввода, ограничение попыток входа, установка периода ожидания для повторной попытки входа, валидация и типизация данных",
                   "threatId": "fdcf902b-e6ea-4ca0-bd54-e1ffbbfa71b9"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "modelType": "STRIDE",
+                  "title": "Брутфорс",
+                  "type": "Spoofing",
+                  "mitigation": "капча, rate limit, 2FA",
+                  "threatId": "70c43bc5-6495-46b1-8ed1-9ada18fe029a"
                 }
               ],
               "attrs": {
